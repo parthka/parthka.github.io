@@ -1,0 +1,73 @@
+/* adopted from https://codepen.io/alanhouser/pen/aErrQJ */
+
+#timeline-content {
+  margin-top: 50px;
+  text-align: center;
+}
+/* Timeline */
+.timeline {
+  border-left: 4px solid #cf4420;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(49, 53, 53, 0.8);
+  /*font-family: 'Chivo', sans-serif;*/
+  margin: 5px 150px;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 1.0em;
+  font-size: 1em;
+  padding: 50px;
+  list-style: none;
+  text-align: left;
+  font-weight: 100;
+  max-width: 80%;
+}
+.timeline h1 {
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  font-size: 1.4em;
+}
+.timeline h2,
+.timeline h3 {
+  letter-spacing: 1.0px;
+  font-weight: 400;
+  font-size: 1.6em;
+}
+.timeline .event {
+  border-bottom: 1px dashed rgba(99, 0, 49, 0.3);
+  padding-bottom: 25px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+.timeline .event:before,
+.timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+.timeline .event:before {
+  left: -205px;
+  color: rgba(49, 53, 53, 0.8);
+  content: attr(data-date);
+  text-align: right;
+  font-weight: 100;
+  font-size: 1.4em;
+  min-width: 125px;
+  /* font-family: 'Saira', sans-serif; */
+}
+.timeline .event:after {
+  box-shadow: 0 0 0 4px #630031;
+  left: -57.85px;
+  background: #630031;
+  border-radius: 90%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 2px;
+}
