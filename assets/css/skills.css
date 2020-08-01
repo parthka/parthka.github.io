@@ -1,0 +1,25 @@
+.skill-box {
+    padding: 1rem;
+    color:#ddd;
+}
+
+.skill-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom:  0.5rem;
+}
+
+.skill-icon {
+    width: 110px;
+}
+
+.img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
